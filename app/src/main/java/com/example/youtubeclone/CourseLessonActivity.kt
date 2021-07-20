@@ -10,7 +10,7 @@ class CourseLessonActivity : AppCompatActivity() {
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityCourseLessonBinding.inflate(layoutInflater)
+        binding = com.example.youtubeclone.databinding.ActivityCourseLessonBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val courseLink = intent.getStringExtra(CourseLessonViewHolder.COURSE_LESSON_LINK_KEY)
 
