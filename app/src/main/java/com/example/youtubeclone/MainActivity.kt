@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun fetchJson(){
         println("Attempting to Fetch Json")
-        val url = "https://api.letsbuildthatapp.com/youtube/home_feed"
+        val url = "https://youtubecloneapinodejs.herokuapp.com/players"
         val request = Request.Builder().url(url).build()
         val client = OkHttpClient()
         client.newCall(request).enqueue(object: Callback{
