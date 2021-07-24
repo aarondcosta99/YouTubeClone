@@ -118,7 +118,7 @@ class CourseDetailActivity : AppCompatActivity() {
 
 }
 
-class CourseLessonViewHolder(val customView: View, var courseLesson: CourseDetailActivity.CourseLesson?=null):RecyclerView.ViewHolder(customView){
+class CourseLessonViewHolder(private val customView: View, var courseLesson: CourseDetailActivity.CourseLesson?=null):RecyclerView.ViewHolder(customView){
 
     val courseImageView:ImageView = customView.findViewById(R.id.courseImageView)
 
@@ -128,7 +128,7 @@ class CourseLessonViewHolder(val customView: View, var courseLesson: CourseDetai
 
     companion object {
 
-        val COURSE_LESSON_LINK_KEY = "COURSE_LESSON_LINK"
+        const val COURSE_LESSON_LINK_KEY = "COURSE_LESSON_LINK"
 
     }
 

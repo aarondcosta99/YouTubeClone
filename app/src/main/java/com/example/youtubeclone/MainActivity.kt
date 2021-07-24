@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun fetchJson(){
+    private fun fetchJson(){
 
         println("Attempting to Fetch Json")
 
@@ -70,6 +70,12 @@ class MainActivity : AppCompatActivity() {
 
 class HomeFeed(val videos: List<Video>)
 
-class Video(val id: Int, val name: String, val link: String, val imageUrl: String, val numberOfViews: String, val channel: Channel)
+class Video(
+    val id: Int,
+    val name: String,
+    val imageUrl: String,
+    val numberOfViews: String,
+    val channel: Channel
+)
 
-class Channel(val name: String, val profileimageUrl: String)
+class Channel(val name: String, val profileimageUrl: String,val numberOfSubscribers: String)

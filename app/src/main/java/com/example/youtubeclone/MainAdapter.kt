@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 
-class MainAdapter(val homeFeed: HomeFeed):RecyclerView.Adapter<ViewHolder>() {
+class MainAdapter(private val homeFeed: HomeFeed):RecyclerView.Adapter<ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
@@ -37,7 +37,7 @@ class MainAdapter(val homeFeed: HomeFeed):RecyclerView.Adapter<ViewHolder>() {
 
         holder.videoTitle.text=video.name
 
-        holder.channelName.text=video.channel.name + " * " + "20K Views" + "\n4 days ago"
+        holder.channelName.text=video.channel.name + " * " + video.numberOfViews + "Views\n" + video.channel.numberOfSubscribers + "subscribers"
 
         Picasso.get().load(video.imageUrl).into(holder.thumbNailImageView)
 
@@ -61,9 +61,9 @@ class ViewHolder(view: View, var video: Video?=null): RecyclerView.ViewHolder(vi
 
     companion object{
 
-        val VIDEO_TITLE_KEY = "VIDEO_TITLE"
+        const val VIDEO_TITLE_KEY = "VIDEO_TITLE"
 
-        val VIDEO_ID_KEY = "VIDEO_ID"
+        const val VIDEO_ID_KEY = "VIDEO_ID"
 
     }
 
