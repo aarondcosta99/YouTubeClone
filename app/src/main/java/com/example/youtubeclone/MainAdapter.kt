@@ -37,7 +37,7 @@ class MainAdapter(private val homeFeed: HomeFeed):RecyclerView.Adapter<ViewHolde
 
         holder.videoTitle.text=video.name
 
-        holder.channelName.text=video.channel.name + " * " + video.numberOfViews + "Views\n" + video.channel.numberOfSubscribers + "subscribers"
+        holder.channelName.text=video.channel.name + " * " + video.numberOfViews + " Views\n" + video.channel.numberOfSubscribers + " subscribers"
 
         Picasso.get().load(video.imageUrl).into(holder.thumbNailImageView)
 
