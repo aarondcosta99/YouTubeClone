@@ -8,5 +8,6 @@ Click [here](https://github.com/aarondcosta99/YouTubeClone/raw/master/app/src/ma
 ![](https://github.com/aarondcosta99/YouTubeClone/blob/master/app/src/main/res/ss/1.jpg?raw=true)
 ![](https://github.com/aarondcosta99/YouTubeClone/blob/master/app/src/main/res/ss/2.jpg?raw=true)
 ![](https://github.com/aarondcosta99/YouTubeClone/blob/master/app/src/main/res/ss/3.jpg?raw=true)
+![](https://github.com/aarondcosta99/YouTubeClone/blob/master/app/src/main/res/ss/4.jpg?raw=true)
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
