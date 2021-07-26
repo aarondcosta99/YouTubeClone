@@ -1,7 +1,7 @@
 # YouTubeClone
-CryptoSave is an Android app that allowed users to save notes in the database, while also giving them the feature to encrypt the note. The encrypted note could also be decrypted back to it's original text.
+YoutubeClone is an Android app that was developed to look similar to the actual YouTube app. This app fetches content from an API and displays it inside a recyclerview.
 
-This app was developed on Android Studio in Kotlin. The database used was Google's Cloud Firestore.
+This app was developed on Android Studio in Kotlin and the database used was Google's Cloud Firestore. The [API](https://youtubecloneapinodejs.herokuapp.com/players) I created for this app.
 ## Installation
 Click [here](https://github.com/aarondcosta99/YouTubeClone/raw/master/app/src/main/res/ss/YouTubeClone_apk.apk) to download the apk file and install the app on your Android Device.
 ## Screenshots
